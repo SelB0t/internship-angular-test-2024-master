@@ -1,10 +1,12 @@
 <nav>
-    <a routerLink="/">Home</a>
-    |
-    <a routerLink="/sandbox">Sandbox</a>
-    |
-    <a routerLink="/button">Button</a>
-    |
-    <a routerLink="/movies">Moives</a>
+
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sandbox">Sandbox</a>
+        </li>
+    </ul>
 </nav>
 <router-outlet></router-outlet>

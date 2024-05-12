@@ -1,4 +1,16 @@
-<p>sandbox works!</p>
-<app-button id="inc" buttonText="Increase" [changer]=1 (counterChanger)="changeCounter($event)" ></app-button>
-<app-button id="dec" buttonText="Decrease" [changer]="-1" (counterChanger)="changeCounter($event)" [disabled]="disabled" ></app-button>
-<h1> Counter: {{counter}}</h1>
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center">
+        <!-- Counter -->
+        <h1 class="display-4 mb-4">Counter: {{counter}}</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-auto">
+        <!-- Gombok -->
+        <app-button id="inc" buttonText="Increase" [changer]=1 (counterChanger)="changeCounter($event)" ></app-button>
+        <app-button id="dec" buttonText="Decrease" [changer]=-1 (counterChanger)="changeCounter($event)" [disabled]="disabled" ></app-button>
+      </div>
+    </div>
+  </div>
+  

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import {Movies} from '../../models/movies';
 import {MoviesService} from '../../services/movies.service'
 
@@ -12,4 +12,8 @@ import {MoviesService} from '../../services/movies.service'
 export class MoviesComponent {
   MoviesService = inject(MoviesService);
   MoviesList: Movies[] =this.MoviesService.getMovies();
+  removeMovie(movieId: number): void {
+    this.MoviesList = this.MoviesList.filter(movie => movie.id !== movieId);
+    console.log(this.MoviesList);
+  }
 }

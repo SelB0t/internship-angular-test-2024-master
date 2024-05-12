@@ -12,4 +12,6 @@ export class MoviesService {
   getMovies() : Movies[] {
     return MOVIES;
   }
+
+  
 }
