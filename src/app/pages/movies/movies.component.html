@@ -1,0 +1,8 @@
+<p>movies works!</p>
+@for(movie of MoviesList; track movie.id){
+    <section>
+        <img [src]="movie.thumbnail">
+        <h2>{{movie.id}}. {{movie.title}} ({{movie.year}})</h2>
+        <h2>{{movie.rating}}</h2>
+    </section>
+}
