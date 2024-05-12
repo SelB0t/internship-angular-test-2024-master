@@ -1,0 +1,4 @@
+<p>sandbox works!</p>
+<app-button id="inc" buttonText="Increase" [changer]=1 (counterChanger)="changeCounter($event)" ></app-button>
+<app-button id="dec" buttonText="Decrease" [changer]="-1" (counterChanger)="changeCounter($event)" [disabled]="disabled" ></app-button>
+<h1> Counter: {{counter}}</h1>
